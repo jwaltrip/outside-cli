@@ -5,6 +5,9 @@
   "author": "Jake Waltrip <jake.waltrip.dev@gmail.com>",
   "license": "DO WHAT THE FUCK YOU WANT LICENSE",
   "private": true,
+  "bin": {
+    "outside": "bin/outside"
+  },
   "scripts": {},
   "dependencies": {
 
