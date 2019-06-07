@@ -1,0 +1,15 @@
+{
+  "name": "outside-cli",
+  "version": "1.0.0",
+  "description": "Gets current weather conditions and 10-day forecast for any city",
+  "author": "Jake Waltrip <jake.waltrip.dev@gmail.com>",
+  "license": "DO WHAT THE FUCK YOU WANT LICENSE",
+  "private": true,
+  "scripts": {},
+  "dependencies": {
+
+  },
+  "devDependencies": {
+
+  }
+}
