@@ -1,4 +1,4 @@
-const minimist = require('minimist');
+const minimist = require('minimist')
 
 module.exports = () => {
   /**
@@ -13,8 +13,8 @@ module.exports = () => {
    *  All args that come after the first 2 are the ones we care about
    *  and are used to determine the functionality of the program
    **/
-  const args = minimist(process.argv.slice(2));
-  const cmd = args._[0];
+  const args = minimist(process.argv.slice(2))
+  const cmd = args._[0]
   
   /**
    *  To make the CLI only load commands that were invoked
@@ -27,10 +27,10 @@ module.exports = () => {
    **/
   switch (cmd) {
     case 'today':
-      require('./cmds/today')(args);
-      break;
+      require('./cmds/today')(args)
+      break
     default:
-      console.error(`"${cmd}" is not a valid command!`);
-      break;
+      console.error(`"${cmd}" is not a valid command!`)
+      break
   }
-};
+}
