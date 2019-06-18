@@ -2,6 +2,7 @@ const { Signale } = require("signale")
 
 // Logger config
 const logConfig = {
+  logLevel: process.env.LOG_LEVEL || "warn",
   scope: "help scope"
 }
 

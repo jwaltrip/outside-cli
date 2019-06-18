@@ -6,7 +6,7 @@ module.exports = () => {
   
   // signale logger logLevel config
   const signaleConfig = {
-    logLevel: process.env.logLevel || "warn",
+    logLevel: process.env.LOG_LEVEL || "warn",
     scope: "index scope"
   }
   
@@ -50,7 +50,7 @@ module.exports = () => {
    **/
   switch (cmd) {
     
-    case 'today':
+    case "today":
       require('./cmds/today')(args)
       break
     
@@ -67,7 +67,6 @@ module.exports = () => {
       break
     
     default:
-      // console.error(`"${cmd}" is not a valid command!`)
       log.error(`"${cmd}" is not a valid command!`)
       break
   }
